@@ -1,0 +1,1860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0a1 (Python 3.8.5 on win32)" generated="20220130 00:26:33.638" rpa="false" schemaversion="3">
+<suite id="s1" name="Officemate-SIT-Home-Search-Feature" source="C:\Users\chatu\Documents\Central\Automate Test\Officemate\Robot\Web\01-Features\Officemate-SIT-Home-Search-Feature.robot">
+<kw name="Open Home Page" library="Officemate-SIT-Resource-Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220130 00:26:34.004" level="INFO">Opening browser 'Chrome' to base url 'https://www.officemate.co.th/'.</msg>
+<status status="PASS" starttime="20220130 00:26:34.004" endtime="20220130 00:26:45.193"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220130 00:26:45.193" endtime="20220130 00:26:45.690"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:34.003" endtime="20220130 00:26:45.691"/>
+</kw>
+<test id="s1-t1" name="Scenario: TC001 Search with less than 1 character">
+<kw name="Given Go To Home Page" library="Officemate-SIT-Resource-Common">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220130 00:26:45.695" level="INFO">Opening url 'https://www.officemate.co.th/'</msg>
+<status status="PASS" starttime="20220130 00:26:45.695" endtime="20220130 00:26:47.150"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:45.694" endtime="20220130 00:26:47.150"/>
+</kw>
+<kw name="And Change Language to" library="Officemate-SIT-Home-Search-Step">
+<arg>English</arg>
+<kw name="Click Change Language" library="Officemate-SIT-Home-Search-Common">
+<arg>${Language}</arg>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"LanguageDropdown")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:26:48.159" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:26:47.153" endtime="20220130 00:26:48.159"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:26:48.159" endtime="20220130 00:26:48.209"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:26:48.209" endtime="20220130 00:26:48.235"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:47.152" endtime="20220130 00:26:48.236"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:26:48.236" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:26:48.236" endtime="20220130 00:26:48.549"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:26:48.551" level="INFO">Clicking element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:26:48.550" endtime="20220130 00:26:48.625"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:47.152" endtime="20220130 00:26:48.625"/>
+</kw>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"Language") and contains(text(), "${Language}")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:26:49.646" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:26:48.627" endtime="20220130 00:26:49.646"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:26:49.647" endtime="20220130 00:26:49.766"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:26:49.766" endtime="20220130 00:26:49.891"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:48.626" endtime="20220130 00:26:49.891"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:26:49.891" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:26:49.891" endtime="20220130 00:26:50.604"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:26:50.604" level="INFO">Clicking element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:26:50.604" endtime="20220130 00:26:52.015"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:48.626" endtime="20220130 00:26:52.015"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:47.151" endtime="20220130 00:26:52.016"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:47.151" endtime="20220130 00:26:52.016"/>
+</kw>
+<kw name="When I search with less than 1 character" library="Officemate-SIT-Home-Search-Step">
+<kw name="Click Search Button" library="Officemate-SIT-Home-Search-Common">
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[@id="btn-searchResultPage"]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:26:53.032" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:26:52.018" endtime="20220130 00:26:53.032"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:26:53.033" endtime="20220130 00:26:53.137"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:26:53.137" endtime="20220130 00:26:53.163"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:52.018" endtime="20220130 00:26:53.163"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:26:53.164" level="INFO">Simulating Mouse Over on element '//div[@id="btn-searchResultPage"]'.</msg>
+<status status="PASS" starttime="20220130 00:26:53.163" endtime="20220130 00:26:53.442"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:26:53.443" level="INFO">Clicking element '//div[@id="btn-searchResultPage"]'.</msg>
+<status status="PASS" starttime="20220130 00:26:53.442" endtime="20220130 00:26:53.516"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:52.017" endtime="20220130 00:26:53.516"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:52.017" endtime="20220130 00:26:53.517"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:52.016" endtime="20220130 00:26:53.517"/>
+</kw>
+<kw name="Then I should not get Search Result" library="Officemate-SIT-Home-Search-Step">
+<kw name="Verify not get Search Result" library="Officemate-SIT-Home-Search-Common">
+<kw name="Verify Element Is Not Visible" library="Officemate-SIT-Resource-Common">
+<arg>//div[@class="_2oxKm"]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Not Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220130 00:26:53.520" endtime="20220130 00:26:53.544"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:53.520" endtime="20220130 00:26:53.545"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:53.519" endtime="20220130 00:26:53.545"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:53.518" endtime="20220130 00:26:53.545"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:53.518" endtime="20220130 00:26:53.545"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:45.691" endtime="20220130 00:26:53.546"/>
+</test>
+<test id="s1-t2" name="Scenario: TC002 Verify Place Holder">
+<kw name="Given Go To Home Page" library="Officemate-SIT-Resource-Common">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220130 00:26:53.548" level="INFO">Opening url 'https://www.officemate.co.th/'</msg>
+<status status="PASS" starttime="20220130 00:26:53.547" endtime="20220130 00:26:55.775"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:53.547" endtime="20220130 00:26:55.775"/>
+</kw>
+<kw name="And Change Language to" library="Officemate-SIT-Home-Search-Step">
+<arg>English</arg>
+<kw name="Click Change Language" library="Officemate-SIT-Home-Search-Common">
+<arg>${Language}</arg>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"LanguageDropdown")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:26:56.784" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:26:55.778" endtime="20220130 00:26:56.784"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:26:56.785" endtime="20220130 00:26:57.123"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:26:57.124" endtime="20220130 00:26:57.168"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:55.777" endtime="20220130 00:26:57.168"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:26:57.169" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:26:57.169" endtime="20220130 00:26:57.501"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:26:57.502" level="INFO">Clicking element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:26:57.502" endtime="20220130 00:26:57.751"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:55.777" endtime="20220130 00:26:57.751"/>
+</kw>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"Language") and contains(text(), "${Language}")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:26:58.761" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:26:57.753" endtime="20220130 00:26:58.761"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:26:58.762" endtime="20220130 00:26:58.781"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:26:58.781" endtime="20220130 00:26:58.809"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:57.752" endtime="20220130 00:26:58.809"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:26:58.810" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:26:58.810" endtime="20220130 00:26:59.156"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:26:59.157" level="INFO">Clicking element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:26:59.157" endtime="20220130 00:27:00.297"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:57.752" endtime="20220130 00:27:00.298"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:55.776" endtime="20220130 00:27:00.298"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:55.776" endtime="20220130 00:27:00.298"/>
+</kw>
+<kw name="When I verify Place Holder" library="Officemate-SIT-Home-Search-Step">
+<kw name="Click Search Textbox" library="Officemate-SIT-Home-Search-Common">
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar"]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:01.315" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:00.300" endtime="20220130 00:27:01.315"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:01.316" endtime="20220130 00:27:01.427"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:01.427" endtime="20220130 00:27:01.451"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:00.300" endtime="20220130 00:27:01.452"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:01.452" level="INFO">Simulating Mouse Over on element '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:01.452" endtime="20220130 00:27:01.742"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:01.743" level="INFO">Clicking element '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:01.742" endtime="20220130 00:27:01.927"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:00.299" endtime="20220130 00:27:01.928"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:00.299" endtime="20220130 00:27:01.928"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:00.298" endtime="20220130 00:27:01.928"/>
+</kw>
+<kw name="Then I should get Place Holder" library="Officemate-SIT-Home-Search-Step">
+<arg>Search all products</arg>
+<kw name="Verify Place Holder" library="Officemate-SIT-Home-Search-Common">
+<arg>${Place Holder}</arg>
+<kw name="Verify Element Is Visible" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar" and @placeholder="${Place Holder}"]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:01.930" endtime="20220130 00:27:01.970"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:01.930" endtime="20220130 00:27:01.971"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:01.930" endtime="20220130 00:27:01.971"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:01.929" endtime="20220130 00:27:01.971"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:01.929" endtime="20220130 00:27:01.972"/>
+</kw>
+<status status="PASS" starttime="20220130 00:26:53.546" endtime="20220130 00:27:01.972"/>
+</test>
+<test id="s1-t3" name="Scenario: TC003 Search by Product when Search Not Found">
+<kw name="Given Go To Home Page" library="Officemate-SIT-Resource-Common">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220130 00:27:01.976" level="INFO">Opening url 'https://www.officemate.co.th/'</msg>
+<status status="PASS" starttime="20220130 00:27:01.976" endtime="20220130 00:27:05.104"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:01.975" endtime="20220130 00:27:05.104"/>
+</kw>
+<kw name="And Change Language to" library="Officemate-SIT-Home-Search-Step">
+<arg>English</arg>
+<kw name="Click Change Language" library="Officemate-SIT-Home-Search-Common">
+<arg>${Language}</arg>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"LanguageDropdown")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:06.114" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:05.107" endtime="20220130 00:27:06.114"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:06.115" endtime="20220130 00:27:06.419"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:06.420" endtime="20220130 00:27:06.494"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:05.106" endtime="20220130 00:27:06.495"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:06.495" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:06.495" endtime="20220130 00:27:06.865"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:06.866" level="INFO">Clicking element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:06.865" endtime="20220130 00:27:06.914"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:05.105" endtime="20220130 00:27:06.914"/>
+</kw>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"Language") and contains(text(), "${Language}")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:07.931" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:06.916" endtime="20220130 00:27:07.932"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:07.933" endtime="20220130 00:27:07.959"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:07.959" endtime="20220130 00:27:07.986"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:06.916" endtime="20220130 00:27:07.986"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:07.987" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:07.986" endtime="20220130 00:27:08.265"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:08.268" level="INFO">Clicking element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:08.267" endtime="20220130 00:27:09.468"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:06.916" endtime="20220130 00:27:09.468"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:05.105" endtime="20220130 00:27:09.468"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:05.104" endtime="20220130 00:27:09.468"/>
+</kw>
+<kw name="When I search by Product" library="Officemate-SIT-Home-Search-Step">
+<arg>@</arg>
+<kw name="Input Search Textbox" library="Officemate-SIT-Home-Search-Common">
+<arg>${Product}</arg>
+<kw name="Input Text when Available" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar"]</arg>
+<arg>${Product}</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:10.477" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:09.471" endtime="20220130 00:27:10.477"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:10.478" endtime="20220130 00:27:10.721"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:10.721" endtime="20220130 00:27:10.793"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:09.470" endtime="20220130 00:27:10.793"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:11.803" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:10.793" endtime="20220130 00:27:11.803"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:11.804" level="INFO">Typing text '@' into text field '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:11.804" endtime="20220130 00:27:12.005"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:09.470" endtime="20220130 00:27:12.006"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:09.469" endtime="20220130 00:27:12.006"/>
+</kw>
+<kw name="Click Search Button" library="Officemate-SIT-Home-Search-Common">
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[@id="btn-searchResultPage"]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:13.010" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:12.008" endtime="20220130 00:27:13.010"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:13.010" endtime="20220130 00:27:13.077"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:13.078" endtime="20220130 00:27:13.102"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:12.007" endtime="20220130 00:27:13.102"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:13.103" level="INFO">Simulating Mouse Over on element '//div[@id="btn-searchResultPage"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:13.102" endtime="20220130 00:27:13.394"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:13.396" level="INFO">Clicking element '//div[@id="btn-searchResultPage"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:13.395" endtime="20220130 00:27:13.600"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:12.007" endtime="20220130 00:27:13.600"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:12.006" endtime="20220130 00:27:13.600"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:09.469" endtime="20220130 00:27:13.600"/>
+</kw>
+<kw name="Then I should get Search Not Found" library="Officemate-SIT-Home-Search-Step">
+<arg>Search Not Found</arg>
+<kw name="Verify Search Not Found" library="Officemate-SIT-Home-Search-Common">
+<arg>${Product}</arg>
+<kw name="Verify Element Is Visible" library="Officemate-SIT-Resource-Common">
+<arg>//div[@class="_2oxKm"]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:13.603" endtime="20220130 00:27:14.349"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:13.602" endtime="20220130 00:27:14.350"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:13.602" endtime="20220130 00:27:14.350"/>
+</kw>
+<kw name="Verify Element Is Visible" library="Officemate-SIT-Resource-Common">
+<arg>//div[@id="pnl-SearchNotFound"]//div[@class="title" and contains(text(), "${Product}")]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220130 00:27:19.585" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220130 00:27:19.423" endtime="20220130 00:27:19.586"/>
+</kw>
+<msg timestamp="20220130 00:27:19.586" level="FAIL">Element '//div[@id="pnl-SearchNotFound"]//div[@class="title" and contains(text(), "Search Not Found")]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20220130 00:27:14.351" endtime="20220130 00:27:19.588"/>
+</kw>
+<status status="FAIL" starttime="20220130 00:27:14.351" endtime="20220130 00:27:19.589"/>
+</kw>
+<status status="FAIL" starttime="20220130 00:27:14.350" endtime="20220130 00:27:19.590"/>
+</kw>
+<status status="FAIL" starttime="20220130 00:27:13.601" endtime="20220130 00:27:19.590"/>
+</kw>
+<status status="FAIL" starttime="20220130 00:27:13.601" endtime="20220130 00:27:19.591"/>
+</kw>
+<status status="FAIL" starttime="20220130 00:27:01.973" endtime="20220130 00:27:19.592">Element '//div[@id="pnl-SearchNotFound"]//div[@class="title" and contains(text(), "Search Not Found")]' not visible after 5 seconds.</status>
+</test>
+<test id="s1-t4" name="Scenario: TC004 Search by Product when Search Found">
+<kw name="Given Go To Home Page" library="Officemate-SIT-Resource-Common">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220130 00:27:19.594" level="INFO">Opening url 'https://www.officemate.co.th/'</msg>
+<status status="PASS" starttime="20220130 00:27:19.593" endtime="20220130 00:27:22.465"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:19.593" endtime="20220130 00:27:22.465"/>
+</kw>
+<kw name="And Change Language to" library="Officemate-SIT-Home-Search-Step">
+<arg>English</arg>
+<kw name="Click Change Language" library="Officemate-SIT-Home-Search-Common">
+<arg>${Language}</arg>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"LanguageDropdown")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:23.484" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:22.469" endtime="20220130 00:27:23.484"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:23.485" endtime="20220130 00:27:24.046"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:24.047" endtime="20220130 00:27:24.098"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:22.468" endtime="20220130 00:27:24.098"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:24.099" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:24.099" endtime="20220130 00:27:24.411"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:24.412" level="INFO">Clicking element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:24.411" endtime="20220130 00:27:24.502"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:22.468" endtime="20220130 00:27:24.502"/>
+</kw>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"Language") and contains(text(), "${Language}")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:25.508" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:24.505" endtime="20220130 00:27:25.508"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:25.509" endtime="20220130 00:27:25.541"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:25.541" endtime="20220130 00:27:25.568"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:24.504" endtime="20220130 00:27:25.568"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:25.569" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:25.568" endtime="20220130 00:27:25.856"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:25.857" level="INFO">Clicking element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:25.856" endtime="20220130 00:27:28.681"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:24.503" endtime="20220130 00:27:28.681"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:22.466" endtime="20220130 00:27:28.682"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:22.466" endtime="20220130 00:27:28.682"/>
+</kw>
+<kw name="When I search by Product" library="Officemate-SIT-Home-Search-Step">
+<arg>1</arg>
+<kw name="Input Search Textbox" library="Officemate-SIT-Home-Search-Common">
+<arg>${Product}</arg>
+<kw name="Input Text when Available" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar"]</arg>
+<arg>${Product}</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:29.693" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:28.685" endtime="20220130 00:27:29.693"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:29.693" endtime="20220130 00:27:29.746"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:29.746" endtime="20220130 00:27:29.858"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:28.685" endtime="20220130 00:27:29.858"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:30.865" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:29.859" endtime="20220130 00:27:30.865"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:30.866" level="INFO">Typing text '1' into text field '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:30.866" endtime="20220130 00:27:31.054"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:28.684" endtime="20220130 00:27:31.055"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:28.684" endtime="20220130 00:27:31.056"/>
+</kw>
+<kw name="Click Search Button" library="Officemate-SIT-Home-Search-Common">
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[@id="btn-searchResultPage"]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:32.060" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:31.059" endtime="20220130 00:27:32.060"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:32.060" endtime="20220130 00:27:32.135"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:32.136" endtime="20220130 00:27:32.162"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:31.058" endtime="20220130 00:27:32.162"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:32.163" level="INFO">Simulating Mouse Over on element '//div[@id="btn-searchResultPage"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:32.162" endtime="20220130 00:27:32.442"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:32.443" level="INFO">Clicking element '//div[@id="btn-searchResultPage"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:32.442" endtime="20220130 00:27:32.674"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:31.057" endtime="20220130 00:27:32.675"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:31.056" endtime="20220130 00:27:32.675"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:28.683" endtime="20220130 00:27:32.676"/>
+</kw>
+<kw name="Then I should get Search Result" library="Officemate-SIT-Home-Search-Step">
+<kw name="Verify Search Result" library="Officemate-SIT-Home-Search-Common">
+<kw name="Verify Element Is Visible" library="Officemate-SIT-Resource-Common">
+<arg>//div[@class="_2oxKm"]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:32.678" endtime="20220130 00:27:32.991"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:32.678" endtime="20220130 00:27:32.992"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:32.678" endtime="20220130 00:27:32.992"/>
+</kw>
+<kw name="Verify Element Is Visible" library="Officemate-SIT-Resource-Common">
+<arg>//div[@data-testid="pnl-productGrid"]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:32.993" endtime="20220130 00:27:36.708"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:32.993" endtime="20220130 00:27:36.709"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:32.992" endtime="20220130 00:27:36.709"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:32.677" endtime="20220130 00:27:36.709"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:32.676" endtime="20220130 00:27:36.710"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:19.592" endtime="20220130 00:27:36.710"/>
+</test>
+<test id="s1-t5" name="Scenario: TC005 Suggest with less than 1 character">
+<kw name="Given Go To Home Page" library="Officemate-SIT-Resource-Common">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220130 00:27:36.713" level="INFO">Opening url 'https://www.officemate.co.th/'</msg>
+<status status="PASS" starttime="20220130 00:27:36.712" endtime="20220130 00:27:40.030"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:36.711" endtime="20220130 00:27:40.031"/>
+</kw>
+<kw name="And Change Language to" library="Officemate-SIT-Home-Search-Step">
+<arg>English</arg>
+<kw name="Click Change Language" library="Officemate-SIT-Home-Search-Common">
+<arg>${Language}</arg>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"LanguageDropdown")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:41.044" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:40.034" endtime="20220130 00:27:41.044"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:41.045" endtime="20220130 00:27:41.223"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:41.223" endtime="20220130 00:27:41.255"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:40.034" endtime="20220130 00:27:41.256"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:41.256" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:41.256" endtime="20220130 00:27:41.563"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:41.564" level="INFO">Clicking element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:41.563" endtime="20220130 00:27:41.671"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:40.033" endtime="20220130 00:27:41.671"/>
+</kw>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"Language") and contains(text(), "${Language}")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:42.683" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:41.675" endtime="20220130 00:27:42.683"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:42.684" endtime="20220130 00:27:42.714"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:42.715" endtime="20220130 00:27:42.738"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:41.673" endtime="20220130 00:27:42.738"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:42.739" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:42.738" endtime="20220130 00:27:43.039"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:43.039" level="INFO">Clicking element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:43.039" endtime="20220130 00:27:44.465"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:41.672" endtime="20220130 00:27:44.466"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:40.032" endtime="20220130 00:27:44.466"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:40.031" endtime="20220130 00:27:44.466"/>
+</kw>
+<kw name="When I am suggested with less than 1 character" library="Officemate-SIT-Home-Search-Step">
+<kw name="Click Search Textbox" library="Officemate-SIT-Home-Search-Common">
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar"]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:45.472" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:44.469" endtime="20220130 00:27:45.472"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:45.473" endtime="20220130 00:27:45.784"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:45.785" endtime="20220130 00:27:45.913"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:44.468" endtime="20220130 00:27:45.914"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:45.914" level="INFO">Simulating Mouse Over on element '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:45.914" endtime="20220130 00:27:46.329"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:46.330" level="INFO">Clicking element '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:46.330" endtime="20220130 00:27:46.473"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:44.468" endtime="20220130 00:27:46.474"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:44.467" endtime="20220130 00:27:46.474"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:44.467" endtime="20220130 00:27:46.475"/>
+</kw>
+<kw name="Then I should not get Suggest Result" library="Officemate-SIT-Home-Search-Step">
+<kw name="Verify not get Suggest Result" library="Officemate-SIT-Home-Search-Common">
+<kw name="Verify Element Is Not Visible" library="Officemate-SIT-Resource-Common">
+<arg>//div[@class="_4AELR suggestion_container"]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Not Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220130 00:27:46.479" endtime="20220130 00:27:46.673"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:46.479" endtime="20220130 00:27:46.674"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:46.478" endtime="20220130 00:27:46.674"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:46.477" endtime="20220130 00:27:46.674"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:46.476" endtime="20220130 00:27:46.675"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:36.711" endtime="20220130 00:27:46.675"/>
+</test>
+<test id="s1-t6" name="Scenario: TC006 Suggest when Search Not Found">
+<kw name="Given Go To Home Page" library="Officemate-SIT-Resource-Common">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220130 00:27:46.678" level="INFO">Opening url 'https://www.officemate.co.th/'</msg>
+<status status="PASS" starttime="20220130 00:27:46.678" endtime="20220130 00:27:48.508"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:46.677" endtime="20220130 00:27:48.509"/>
+</kw>
+<kw name="And Change Language to" library="Officemate-SIT-Home-Search-Step">
+<arg>English</arg>
+<kw name="Click Change Language" library="Officemate-SIT-Home-Search-Common">
+<arg>${Language}</arg>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"LanguageDropdown")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:49.518" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:48.512" endtime="20220130 00:27:49.518"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:49.518" endtime="20220130 00:27:50.008"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:50.008" endtime="20220130 00:27:50.102"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:48.511" endtime="20220130 00:27:50.102"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:50.103" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:50.103" endtime="20220130 00:27:50.476"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:50.477" level="INFO">Clicking element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:50.477" endtime="20220130 00:27:50.569"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:48.511" endtime="20220130 00:27:50.570"/>
+</kw>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"Language") and contains(text(), "${Language}")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:51.587" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:50.573" endtime="20220130 00:27:51.587"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:51.587" endtime="20220130 00:27:51.683"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:51.683" endtime="20220130 00:27:51.755"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:50.572" endtime="20220130 00:27:51.755"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:51.756" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:51.755" endtime="20220130 00:27:52.121"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:52.121" level="INFO">Clicking element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:27:52.121" endtime="20220130 00:27:53.478"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:50.571" endtime="20220130 00:27:53.479"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:48.510" endtime="20220130 00:27:53.479"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:48.509" endtime="20220130 00:27:53.479"/>
+</kw>
+<kw name="When I am suggested by" library="Officemate-SIT-Home-Search-Step">
+<arg>@</arg>
+<kw name="Input Search Textbox" library="Officemate-SIT-Home-Search-Common">
+<arg>${Product}</arg>
+<kw name="Input Text when Available" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar"]</arg>
+<arg>${Product}</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:54.497" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:53.482" endtime="20220130 00:27:54.497"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:54.498" endtime="20220130 00:27:54.856"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:54.857" endtime="20220130 00:27:54.886"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:53.481" endtime="20220130 00:27:54.887"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:55.895" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:54.887" endtime="20220130 00:27:55.895"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:55.896" level="INFO">Typing text '@' into text field '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:55.895" endtime="20220130 00:27:56.740"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:53.481" endtime="20220130 00:27:56.741"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:53.480" endtime="20220130 00:27:56.741"/>
+</kw>
+<kw name="Click Search Textbox" library="Officemate-SIT-Home-Search-Common">
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar"]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:27:57.746" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:27:56.743" endtime="20220130 00:27:57.746"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:27:57.746" endtime="20220130 00:27:57.785"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:27:57.785" endtime="20220130 00:27:57.808"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:56.742" endtime="20220130 00:27:57.808"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:27:57.809" level="INFO">Simulating Mouse Over on element '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:57.808" endtime="20220130 00:27:58.094"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:27:58.096" level="INFO">Clicking element '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:27:58.095" endtime="20220130 00:27:58.154"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:56.742" endtime="20220130 00:27:58.154"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:56.741" endtime="20220130 00:27:58.155"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:53.480" endtime="20220130 00:27:58.155"/>
+</kw>
+<kw name="Then I should get Suggest Not Found" library="Officemate-SIT-Home-Search-Step">
+<kw name="Verify Suggest Not Found" library="Officemate-SIT-Home-Search-Common">
+<kw name="Verify Element Is Not Visible" library="Officemate-SIT-Resource-Common">
+<arg>//div[@class="_4AELR suggestion_container"]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Not Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" starttime="20220130 00:27:58.159" endtime="20220130 00:27:58.216"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:58.158" endtime="20220130 00:27:58.217"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:58.157" endtime="20220130 00:27:58.217"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:58.157" endtime="20220130 00:27:58.217"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:58.156" endtime="20220130 00:27:58.218"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:46.676" endtime="20220130 00:27:58.218"/>
+</test>
+<test id="s1-t7" name="Scenario: TC007 Suggest when Search Found">
+<kw name="Given Go To Home Page" library="Officemate-SIT-Resource-Common">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220130 00:27:58.222" level="INFO">Opening url 'https://www.officemate.co.th/'</msg>
+<status status="PASS" starttime="20220130 00:27:58.222" endtime="20220130 00:28:01.329"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:58.221" endtime="20220130 00:28:01.329"/>
+</kw>
+<kw name="And Change Language to" library="Officemate-SIT-Home-Search-Step">
+<arg>English</arg>
+<kw name="Click Change Language" library="Officemate-SIT-Home-Search-Common">
+<arg>${Language}</arg>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"LanguageDropdown")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:02.345" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:01.333" endtime="20220130 00:28:02.345"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:02.346" endtime="20220130 00:28:02.603"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:02.603" endtime="20220130 00:28:02.641"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:01.332" endtime="20220130 00:28:02.642"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:28:02.642" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:02.642" endtime="20220130 00:28:02.994"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:02.995" level="INFO">Clicking element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:02.995" endtime="20220130 00:28:03.101"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:01.331" endtime="20220130 00:28:03.101"/>
+</kw>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"Language") and contains(text(), "${Language}")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:04.107" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:03.105" endtime="20220130 00:28:04.107"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:04.108" endtime="20220130 00:28:04.128"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:04.128" endtime="20220130 00:28:04.155"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:03.103" endtime="20220130 00:28:04.155"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:28:04.156" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:04.155" endtime="20220130 00:28:04.553"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:04.553" level="INFO">Clicking element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:04.553" endtime="20220130 00:28:05.976"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:03.102" endtime="20220130 00:28:05.977"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:01.330" endtime="20220130 00:28:05.977"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:01.329" endtime="20220130 00:28:05.978"/>
+</kw>
+<kw name="When I am suggested by" library="Officemate-SIT-Home-Search-Step">
+<arg>1</arg>
+<kw name="Input Search Textbox" library="Officemate-SIT-Home-Search-Common">
+<arg>${Product}</arg>
+<kw name="Input Text when Available" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar"]</arg>
+<arg>${Product}</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:06.993" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:05.981" endtime="20220130 00:28:06.993"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:06.994" endtime="20220130 00:28:07.298"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:07.298" endtime="20220130 00:28:07.405"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:05.981" endtime="20220130 00:28:07.405"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:08.405" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:07.405" endtime="20220130 00:28:08.406"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:08.407" level="INFO">Typing text '1' into text field '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:28:08.407" endtime="20220130 00:28:09.095"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:05.980" endtime="20220130 00:28:09.096"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:05.979" endtime="20220130 00:28:09.096"/>
+</kw>
+<kw name="Click Search Textbox" library="Officemate-SIT-Home-Search-Common">
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar"]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:10.103" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:09.098" endtime="20220130 00:28:10.103"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:10.103" endtime="20220130 00:28:10.155"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:10.155" endtime="20220130 00:28:10.177"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:09.097" endtime="20220130 00:28:10.177"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:28:10.178" level="INFO">Simulating Mouse Over on element '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:28:10.177" endtime="20220130 00:28:10.466"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:10.467" level="INFO">Clicking element '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:28:10.466" endtime="20220130 00:28:10.548"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:09.097" endtime="20220130 00:28:10.548"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:09.096" endtime="20220130 00:28:10.549"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:05.978" endtime="20220130 00:28:10.549"/>
+</kw>
+<kw name="Then I should get Suggest Result" library="Officemate-SIT-Home-Search-Step">
+<arg>Categories</arg>
+<kw name="Verify Suggest Result" library="Officemate-SIT-Home-Search-Common">
+<arg>${Suggest}</arg>
+<kw name="Verify Element Is Visible" library="Officemate-SIT-Resource-Common">
+<arg>//div[@class="_4AELR suggestion_container"]//div[contains(text(), "${Suggest}")]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:10.553" endtime="20220130 00:28:10.713"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:10.552" endtime="20220130 00:28:10.713"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:10.551" endtime="20220130 00:28:10.714"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:10.550" endtime="20220130 00:28:10.714"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:10.550" endtime="20220130 00:28:10.714"/>
+</kw>
+<kw name="And I should get Suggest Result" library="Officemate-SIT-Home-Search-Step">
+<arg>Products</arg>
+<kw name="Verify Suggest Result" library="Officemate-SIT-Home-Search-Common">
+<arg>${Suggest}</arg>
+<kw name="Verify Element Is Visible" library="Officemate-SIT-Resource-Common">
+<arg>//div[@class="_4AELR suggestion_container"]//div[contains(text(), "${Suggest}")]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:10.717" endtime="20220130 00:28:10.776"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:10.716" endtime="20220130 00:28:10.776"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:10.716" endtime="20220130 00:28:10.777"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:10.715" endtime="20220130 00:28:10.777"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:10.715" endtime="20220130 00:28:10.777"/>
+</kw>
+<status status="PASS" starttime="20220130 00:27:58.219" endtime="20220130 00:28:10.777"/>
+</test>
+<test id="s1-t8" name="Scenario: TC008 Search by Category">
+<kw name="Given Go To Home Page" library="Officemate-SIT-Resource-Common">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220130 00:28:10.781" level="INFO">Opening url 'https://www.officemate.co.th/'</msg>
+<status status="PASS" starttime="20220130 00:28:10.780" endtime="20220130 00:28:14.994"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:10.780" endtime="20220130 00:28:14.995"/>
+</kw>
+<kw name="And Change Language to" library="Officemate-SIT-Home-Search-Step">
+<arg>English</arg>
+<kw name="Click Change Language" library="Officemate-SIT-Home-Search-Common">
+<arg>${Language}</arg>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"LanguageDropdown")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:16.009" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:14.998" endtime="20220130 00:28:16.009"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:16.010" endtime="20220130 00:28:16.061"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:16.061" endtime="20220130 00:28:16.095"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:14.997" endtime="20220130 00:28:16.096"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:28:16.096" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:16.096" endtime="20220130 00:28:16.509"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:16.510" level="INFO">Clicking element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:16.510" endtime="20220130 00:28:16.598"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:14.996" endtime="20220130 00:28:16.599"/>
+</kw>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"Language") and contains(text(), "${Language}")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:17.618" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:16.602" endtime="20220130 00:28:17.618"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:17.619" endtime="20220130 00:28:17.649"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:17.650" endtime="20220130 00:28:17.675"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:16.601" endtime="20220130 00:28:17.675"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:28:17.676" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:17.676" endtime="20220130 00:28:17.975"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:17.975" level="INFO">Clicking element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:17.975" endtime="20220130 00:28:20.574"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:16.599" endtime="20220130 00:28:20.574"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:14.996" endtime="20220130 00:28:20.575"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:14.995" endtime="20220130 00:28:20.575"/>
+</kw>
+<kw name="When I am suggested by" library="Officemate-SIT-Home-Search-Step">
+<arg>1</arg>
+<kw name="Input Search Textbox" library="Officemate-SIT-Home-Search-Common">
+<arg>${Product}</arg>
+<kw name="Input Text when Available" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar"]</arg>
+<arg>${Product}</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:21.592" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:20.579" endtime="20220130 00:28:21.592"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:21.593" endtime="20220130 00:28:21.641"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:21.642" endtime="20220130 00:28:21.682"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:20.578" endtime="20220130 00:28:21.683"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:22.684" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:21.683" endtime="20220130 00:28:22.684"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:22.686" level="INFO">Typing text '1' into text field '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:28:22.685" endtime="20220130 00:28:22.836"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:20.576" endtime="20220130 00:28:22.838"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:20.576" endtime="20220130 00:28:22.838"/>
+</kw>
+<kw name="Click Search Textbox" library="Officemate-SIT-Home-Search-Common">
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar"]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:23.844" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:22.839" endtime="20220130 00:28:23.845"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:23.846" endtime="20220130 00:28:23.875"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:23.875" endtime="20220130 00:28:23.949"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:22.839" endtime="20220130 00:28:23.949"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:28:23.950" level="INFO">Simulating Mouse Over on element '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:28:23.950" endtime="20220130 00:28:24.253"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:24.255" level="INFO">Clicking element '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:28:24.254" endtime="20220130 00:28:24.511"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:22.839" endtime="20220130 00:28:24.511"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:22.838" endtime="20220130 00:28:24.512"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:20.575" endtime="20220130 00:28:24.512"/>
+</kw>
+<kw name="And Select Category" library="Officemate-SIT-Home-Search-Step">
+<arg>in Seasonal Gifts</arg>
+<kw name="Select Category Value" library="Officemate-SIT-Home-Search-Common">
+<arg>${Category}</arg>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@data-suggestion-label, "categories") and contains(text(), "${Category}")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:25.522" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:24.515" endtime="20220130 00:28:25.522"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:25.523" endtime="20220130 00:28:25.557"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:25.558" endtime="20220130 00:28:25.621"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:24.514" endtime="20220130 00:28:25.621"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:28:25.622" level="INFO">Simulating Mouse Over on element '//div[contains(@data-suggestion-label, "categories") and contains(text(), "in Seasonal Gifts")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:25.622" endtime="20220130 00:28:25.901"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:25.903" level="INFO">Clicking element '//div[contains(@data-suggestion-label, "categories") and contains(text(), "in Seasonal Gifts")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:25.902" endtime="20220130 00:28:26.123"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:24.513" endtime="20220130 00:28:26.124"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:24.513" endtime="20220130 00:28:26.124"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:24.512" endtime="20220130 00:28:26.125"/>
+</kw>
+<kw name="Then I should get Suggest Result by Category" library="Officemate-SIT-Home-Search-Step">
+<kw name="Verify Suggest Result by Category" library="Officemate-SIT-Home-Search-Common">
+<kw name="Verify Element Is Visible" library="Officemate-SIT-Resource-Common">
+<arg>//div[@id="category-page"]//h1[@id="txt-subCategories-name"]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:26.127" endtime="20220130 00:28:28.035"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:26.127" endtime="20220130 00:28:28.035"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:26.126" endtime="20220130 00:28:28.036"/>
+</kw>
+<kw name="Verify Element Is Visible" library="Officemate-SIT-Resource-Common">
+<arg>//div[@id="category-page"]//div[@data-testid="pnl-productGrid"]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:28.038" endtime="20220130 00:28:29.664"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:28.037" endtime="20220130 00:28:29.664"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:28.036" endtime="20220130 00:28:29.665"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:26.126" endtime="20220130 00:28:29.665"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:26.125" endtime="20220130 00:28:29.665"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:10.778" endtime="20220130 00:28:29.665"/>
+</test>
+<test id="s1-t9" name="Scenario: TC009 Search by SKU">
+<kw name="Given Go To Home Page" library="Officemate-SIT-Resource-Common">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220130 00:28:29.668" level="INFO">Opening url 'https://www.officemate.co.th/'</msg>
+<status status="PASS" starttime="20220130 00:28:29.668" endtime="20220130 00:28:31.041"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:29.667" endtime="20220130 00:28:31.041"/>
+</kw>
+<kw name="And Change Language to" library="Officemate-SIT-Home-Search-Step">
+<arg>English</arg>
+<kw name="Click Change Language" library="Officemate-SIT-Home-Search-Common">
+<arg>${Language}</arg>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"LanguageDropdown")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:32.053" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:31.044" endtime="20220130 00:28:32.053"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:32.053" endtime="20220130 00:28:32.382"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:32.383" endtime="20220130 00:28:32.524"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:31.043" endtime="20220130 00:28:32.524"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:28:32.525" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:32.524" endtime="20220130 00:28:32.928"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:32.929" level="INFO">Clicking element '//div[contains(@class,"LanguageDropdown")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:32.929" endtime="20220130 00:28:33.086"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:31.043" endtime="20220130 00:28:33.087"/>
+</kw>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@class,"Language") and contains(text(), "${Language}")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:34.102" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:33.090" endtime="20220130 00:28:34.102"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:34.102" endtime="20220130 00:28:34.178"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:34.178" endtime="20220130 00:28:34.270"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:33.089" endtime="20220130 00:28:34.271"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:28:34.272" level="INFO">Simulating Mouse Over on element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:34.271" endtime="20220130 00:28:34.562"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:34.564" level="INFO">Clicking element '//div[contains(@class,"Language") and contains(text(), "English")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:34.563" endtime="20220130 00:28:37.299"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:33.088" endtime="20220130 00:28:37.300"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:31.042" endtime="20220130 00:28:37.301"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:31.041" endtime="20220130 00:28:37.302"/>
+</kw>
+<kw name="When I am suggested by" library="Officemate-SIT-Home-Search-Step">
+<arg>1</arg>
+<kw name="Input Search Textbox" library="Officemate-SIT-Home-Search-Common">
+<arg>${Product}</arg>
+<kw name="Input Text when Available" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar"]</arg>
+<arg>${Product}</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:38.310" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:37.307" endtime="20220130 00:28:38.310"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:38.310" endtime="20220130 00:28:38.847"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:38.847" endtime="20220130 00:28:38.969"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:37.306" endtime="20220130 00:28:38.970"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:39.974" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:38.970" endtime="20220130 00:28:39.974"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:39.976" level="INFO">Typing text '1' into text field '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:28:39.975" endtime="20220130 00:28:40.167"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:37.304" endtime="20220130 00:28:40.168"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:37.303" endtime="20220130 00:28:40.168"/>
+</kw>
+<kw name="Click Search Textbox" library="Officemate-SIT-Home-Search-Common">
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//input[@data-testid="txt-SearchBar"]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:41.183" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:40.170" endtime="20220130 00:28:41.183"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:41.184" endtime="20220130 00:28:41.266"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:41.267" endtime="20220130 00:28:41.288"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:40.169" endtime="20220130 00:28:41.288"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:28:41.289" level="INFO">Simulating Mouse Over on element '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:28:41.289" endtime="20220130 00:28:41.641"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:41.642" level="INFO">Clicking element '//input[@data-testid="txt-SearchBar"]'.</msg>
+<status status="PASS" starttime="20220130 00:28:41.642" endtime="20220130 00:28:42.345"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:40.169" endtime="20220130 00:28:42.345"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:40.168" endtime="20220130 00:28:42.346"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:37.303" endtime="20220130 00:28:42.346"/>
+</kw>
+<kw name="And Select SKU" library="Officemate-SIT-Home-Search-Step">
+<arg>MY HOME Oven 3 IN 1 OV1703 MH</arg>
+<kw name="Select SKU Value" library="Officemate-SIT-Home-Search-Common">
+<arg>${SKU}</arg>
+<kw name="Click Element when Available" library="Officemate-SIT-Resource-Common">
+<arg>//div[contains(@data-suggestion-label, "products") and contains(text(), "${SKU}")]</arg>
+<kw name="Wait Until Element Is Available" library="Officemate-SIT-Resource-Common">
+<arg>${xpath}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220130 00:28:43.354" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220130 00:28:42.350" endtime="20220130 00:28:43.354"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:43.355" endtime="20220130 00:28:43.383"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220130 00:28:43.383" endtime="20220130 00:28:43.407"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:42.349" endtime="20220130 00:28:43.408"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20220130 00:28:43.408" level="INFO">Simulating Mouse Over on element '//div[contains(@data-suggestion-label, "products") and contains(text(), "MY HOME Oven 3 IN 1 OV1703 MH")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:43.408" endtime="20220130 00:28:43.704"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220130 00:28:43.706" level="INFO">Clicking element '//div[contains(@data-suggestion-label, "products") and contains(text(), "MY HOME Oven 3 IN 1 OV1703 MH")]'.</msg>
+<status status="PASS" starttime="20220130 00:28:43.705" endtime="20220130 00:28:43.911"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:42.348" endtime="20220130 00:28:43.912"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:42.347" endtime="20220130 00:28:43.912"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:42.347" endtime="20220130 00:28:43.913"/>
+</kw>
+<kw name="Then I should get Suggest Result by SKU" library="Officemate-SIT-Home-Search-Step">
+<kw name="Verify Suggest Result by SKU" library="Officemate-SIT-Home-Search-Common">
+<kw name="Verify Element Is Visible" library="Officemate-SIT-Resource-Common">
+<arg>//div[@id="product-page"]//div[contains(@id, "ProductDetail")]</arg>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Wait Until Element Is Visible</arg>
+<arg>${xpath}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220130 00:28:43.916" endtime="20220130 00:28:46.116"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:43.915" endtime="20220130 00:28:46.116"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:43.915" endtime="20220130 00:28:46.117"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:43.914" endtime="20220130 00:28:46.117"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:43.914" endtime="20220130 00:28:46.117"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:29.666" endtime="20220130 00:28:46.118"/>
+</test>
+<kw name="Close Session" library="Officemate-SIT-Resource-Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220130 00:28:46.120" endtime="20220130 00:28:48.291"/>
+</kw>
+<status status="PASS" starttime="20220130 00:28:46.120" endtime="20220130 00:28:48.291"/>
+</kw>
+<status status="FAIL" starttime="20220130 00:26:33.669" endtime="20220130 00:28:48.291"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="1" skip="0" id="s1" name="Officemate-SIT-Home-Search-Feature">Officemate-SIT-Home-Search-Feature</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
