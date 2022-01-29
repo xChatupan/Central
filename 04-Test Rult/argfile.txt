@@ -1,0 +1,6 @@
+--outputdir
+C:\Users\chatu\AppData\Local\Temp\RIDE8594ckrd.d
+-C
+off
+-W
+125
